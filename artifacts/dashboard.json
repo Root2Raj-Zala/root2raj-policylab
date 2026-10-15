@@ -1,0 +1,1166 @@
+{
+  "version": "1.0.0",
+  "source_rows": 4530676,
+  "selected": "action_epsilon_0.5",
+  "test_days": [
+    "2019-11-29",
+    "2019-11-30"
+  ],
+  "scenarios": [
+    {
+      "n": 41536,
+      "clicks": 224,
+      "ess": 40569.1622153186,
+      "ess_fraction": 0.9767228961700357,
+      "weight_max": 1.0,
+      "weight_mean": 0.5128683551617882,
+      "estimates": {
+        "DM": {
+          "value": 0.00823086745584547,
+          "ci95_iid": [
+            0.008214397535812667,
+            0.008247337375878273
+          ]
+        },
+        "IPS": {
+          "value": 0.0028288713405238875,
+          "ci95_iid": [
+            0.002451606020886962,
+            0.003206136660160813
+          ]
+        },
+        "SNIPS": {
+          "value": 0.005515784532331886,
+          "ci95_iid": [
+            0.004780393382514652,
+            0.0062511756821491205
+          ]
+        },
+        "DR": {
+          "value": 0.008230481224312717,
+          "ci95_iid": [
+            0.007852744457540086,
+            0.008608217991085349
+          ]
+        }
+      },
+      "scope": "all",
+      "cap": 1,
+      "paired": {
+        "value": 0.002850409746362963,
+        "ci95_iid": [
+          0.002505472568480535,
+          0.003195346924245391
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 41536,
+      "clicks": 224,
+      "ess": 34773.341595595026,
+      "ess_fraction": 0.8371856123746877,
+      "weight_max": 2.0,
+      "weight_mean": 0.538605065485363,
+      "estimates": {
+        "DM": {
+          "value": 0.00823086745584547,
+          "ci95_iid": [
+            0.008214397535812667,
+            0.008247337375878273
+          ]
+        },
+        "IPS": {
+          "value": 0.0030937018489984635,
+          "ci95_iid": [
+            0.0026293021227707146,
+            0.0035581015752262123
+          ]
+        },
+        "SNIPS": {
+          "value": 0.005743915249312739,
+          "ci95_iid": [
+            0.004882778781420885,
+            0.006605051717204593
+          ]
+        },
+        "DR": {
+          "value": 0.008209980149108835,
+          "ci95_iid": [
+            0.007745609413728282,
+            0.008674350884489389
+          ]
+        }
+      },
+      "scope": "all",
+      "cap": 2,
+      "paired": {
+        "value": 0.0028299086711590796,
+        "ci95_iid": [
+          0.00245145336463208,
+          0.0032083639776860793
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 41536,
+      "clicks": 224,
+      "ess": 17758.64779088945,
+      "ess_fraction": 0.42754833857110575,
+      "weight_max": 5.0,
+      "weight_mean": 0.6158151964560872,
+      "estimates": {
+        "DM": {
+          "value": 0.00823086745584547,
+          "ci95_iid": [
+            0.008214397535812667,
+            0.008247337375878273
+          ]
+        },
+        "IPS": {
+          "value": 0.003888193374422192,
+          "ci95_iid": [
+            0.0030340649109618294,
+            0.004742321837882554
+          ]
+        },
+        "SNIPS": {
+          "value": 0.006313896436460308,
+          "ci95_iid": [
+            0.004931250949843456,
+            0.00769654192307716
+          ]
+        },
+        "DR": {
+          "value": 0.008148476923497183,
+          "ci95_iid": [
+            0.007296103384115923,
+            0.009000850462878443
+          ]
+        }
+      },
+      "scope": "all",
+      "cap": 5,
+      "paired": {
+        "value": 0.002768405445547428,
+        "ci95_iid": [
+          0.0020556615699941832,
+          0.003481149321100673
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 41536,
+      "clicks": 224,
+      "ess": 8172.016845878918,
+      "ess_fraction": 0.19674539786881062,
+      "weight_max": 10.0,
+      "weight_mean": 0.7444987480739607,
+      "estimates": {
+        "DM": {
+          "value": 0.00823086745584547,
+          "ci95_iid": [
+            0.008214397535812667,
+            0.008247337375878273
+          ]
+        },
+        "IPS": {
+          "value": 0.005212345916795073,
+          "ci95_iid": [
+            0.0036106289565426214,
+            0.006814062877047525
+          ]
+        },
+        "SNIPS": {
+          "value": 0.007001147994243857,
+          "ci95_iid": [
+            0.004858430535564434,
+            0.00914386545292328
+          ]
+        },
+        "DR": {
+          "value": 0.008045971547477763,
+          "ci95_iid": [
+            0.006448632555474407,
+            0.00964331053948112
+          ]
+        }
+      },
+      "scope": "all",
+      "cap": 10,
+      "paired": {
+        "value": 0.0026659000695280098,
+        "ci95_iid": [
+          0.0012204197776837344,
+          0.004111380361372285
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 41536,
+      "clicks": 224,
+      "ess": 4493.068050773633,
+      "ess_fraction": 0.10817286331793223,
+      "weight_max": 17.50000000000003,
+      "weight_mean": 0.9375240755007718,
+      "estimates": {
+        "DM": {
+          "value": 0.00823086745584547,
+          "ci95_iid": [
+            0.008214397535812667,
+            0.008247337375878273
+          ]
+        },
+        "IPS": {
+          "value": 0.007198574730354404,
+          "ci95_iid": [
+            0.004439013679017372,
+            0.009958135781691435
+          ]
+        },
+        "SNIPS": {
+          "value": 0.007678282529981253,
+          "ci95_iid": [
+            0.004747981482299319,
+            0.010608583577663188
+          ]
+        },
+        "DR": {
+          "value": 0.007892213483448636,
+          "ci95_iid": [
+            0.005140769665254652,
+            0.01064365730164262
+          ]
+        }
+      },
+      "scope": "all",
+      "cap": 34,
+      "paired": {
+        "value": 0.002512142005498881,
+        "ci95_iid": [
+          -8.459669126397893e-05,
+          0.0051088807022617415
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Paired DR lower bound does not exceed zero"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 20547,
+      "clicks": 89,
+      "ess": 20045.855432532186,
+      "ess_fraction": 0.9756098424359851,
+      "weight_max": 1.0,
+      "weight_mean": 0.5135542901640151,
+      "estimates": {
+        "DM": {
+          "value": 0.008261583942369892,
+          "ci95_iid": [
+            0.008237850278718768,
+            0.008285317606021015
+          ]
+        },
+        "IPS": {
+          "value": 0.0023847763663795234,
+          "ci95_iid": [
+            0.0018721033420598743,
+            0.0028974493906991725
+          ]
+        },
+        "SNIPS": {
+          "value": 0.004643669446550416,
+          "ci95_iid": [
+            0.0036459507811295927,
+            0.005641388111971239
+          ]
+        },
+        "DR": {
+          "value": 0.007813017143986847,
+          "ci95_iid": [
+            0.007299703820193823,
+            0.00832633046777987
+          ]
+        }
+      },
+      "scope": "2019-11-29",
+      "cap": 1,
+      "paired": {
+        "value": 0.0035071044288239846,
+        "ci95_iid": [
+          0.0030787141035893317,
+          0.003935494754058637
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Fewer than 100 observed clicks",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 20547,
+      "clicks": 89,
+      "ess": 17079.770396512366,
+      "ess_fraction": 0.8312537303018623,
+      "weight_max": 2.0,
+      "weight_mean": 0.5406628704920435,
+      "estimates": {
+        "DM": {
+          "value": 0.008261583942369892,
+          "ci95_iid": [
+            0.008237850278718768,
+            0.008285317606021015
+          ]
+        },
+        "IPS": {
+          "value": 0.002822796515306374,
+          "ci95_iid": [
+            0.002109982141400222,
+            0.0035356108892125263
+          ]
+        },
+        "SNIPS": {
+          "value": 0.00522099198847781,
+          "ci95_iid": [
+            0.0039052318089660048,
+            0.006536752167989616
+          ]
+        },
+        "DR": {
+          "value": 0.007947006518248787,
+          "ci95_iid": [
+            0.007235357829349983,
+            0.008658655207147592
+          ]
+        }
+      },
+      "scope": "2019-11-29",
+      "cap": 2,
+      "paired": {
+        "value": 0.0036410938030859265,
+        "ci95_iid": [
+          0.0031270492132386305,
+          0.0041551383929332225
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Fewer than 100 observed clicks",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 20547,
+      "clicks": 89,
+      "ess": 8631.438763376951,
+      "ess_fraction": 0.4200826769541515,
+      "weight_max": 5.0,
+      "weight_mean": 0.6219886114761288,
+      "estimates": {
+        "DM": {
+          "value": 0.008261583942369892,
+          "ci95_iid": [
+            0.008237850278718768,
+            0.008285317606021015
+          ]
+        },
+        "IPS": {
+          "value": 0.004136856962086925,
+          "ci95_iid": [
+            0.002644786339011263,
+            0.005628927585162587
+          ]
+        },
+        "SNIPS": {
+          "value": 0.0066510172143974915,
+          "ci95_iid": [
+            0.004262317578123905,
+            0.009039716850671078
+          ]
+        },
+        "DR": {
+          "value": 0.008348974641034615,
+          "ci95_iid": [
+            0.006863161508748473,
+            0.009834787773320756
+          ]
+        }
+      },
+      "scope": "2019-11-29",
+      "cap": 5,
+      "paired": {
+        "value": 0.004043061925871753,
+        "ci95_iid": [
+          0.0028270234837491862,
+          0.00525910036799432
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Fewer than 100 observed clicks",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 20547,
+      "clicks": 89,
+      "ess": 3991.4201573376245,
+      "ess_fraction": 0.19425805019407333,
+      "weight_max": 10.0,
+      "weight_mean": 0.7575315131162708,
+      "estimates": {
+        "DM": {
+          "value": 0.008261583942369892,
+          "ci95_iid": [
+            0.008237850278718768,
+            0.008285317606021015
+          ]
+        },
+        "IPS": {
+          "value": 0.006326957706721178,
+          "ci95_iid": [
+            0.0034348270406871157,
+            0.00921908837275524
+          ]
+        },
+        "SNIPS": {
+          "value": 0.008352071956312233,
+          "ci95_iid": [
+            0.004555710915954773,
+            0.012148432996669694
+          ]
+        },
+        "DR": {
+          "value": 0.009018921512344324,
+          "ci95_iid": [
+            0.006140711682935191,
+            0.011897131341753457
+          ]
+        }
+      },
+      "scope": "2019-11-29",
+      "cap": 10,
+      "paired": {
+        "value": 0.004713008797181464,
+        "ci95_iid": [
+          0.002116077519962779,
+          0.00730994007440015
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Fewer than 100 observed clicks",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 20547,
+      "clicks": 89,
+      "ess": 2219.894527384436,
+      "ess_fraction": 0.10803983683187016,
+      "weight_max": 17.50000000000003,
+      "weight_mean": 0.9608458655764848,
+      "estimates": {
+        "DM": {
+          "value": 0.008261583942369892,
+          "ci95_iid": [
+            0.008237850278718768,
+            0.008285317606021015
+          ]
+        },
+        "IPS": {
+          "value": 0.00961210882367257,
+          "ci95_iid": [
+            0.004587538032791788,
+            0.014636679614553352
+          ]
+        },
+        "SNIPS": {
+          "value": 0.010003798910978856,
+          "ci95_iid": [
+            0.004808589789457732,
+            0.01519900803249998
+          ]
+        },
+        "DR": {
+          "value": 0.010023841819308895,
+          "ci95_iid": [
+            0.005024326749738008,
+            0.015023356888879784
+          ]
+        }
+      },
+      "scope": "2019-11-29",
+      "cap": 34,
+      "paired": {
+        "value": 0.005717929104146033,
+        "ci95_iid": [
+          0.0010021695386973452,
+          0.01043368866959472
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Fewer than 100 observed clicks"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 20989,
+      "clicks": 135,
+      "ess": 20523.551653718092,
+      "ess_fraction": 0.9778241771269757,
+      "weight_max": 1.0,
+      "weight_mean": 0.5121968650245375,
+      "estimates": {
+        "DM": {
+          "value": 0.008200797817052897,
+          "ci95_iid": [
+            0.008177946502274632,
+            0.008223649131831162
+          ]
+        },
+        "IPS": {
+          "value": 0.0032636142741436043,
+          "ci95_iid": [
+            0.002710935628952232,
+            0.0038162929193349764
+          ]
+        },
+        "SNIPS": {
+          "value": 0.006371796660620437,
+          "ci95_iid": [
+            0.005292715272823485,
+            0.007450878048417388
+          ]
+        },
+        "DR": {
+          "value": 0.0086391540747799,
+          "ci95_iid": [
+            0.008085776950053436,
+            0.009192531199506365
+          ]
+        }
+      },
+      "scope": "2019-11-30",
+      "cap": 1,
+      "paired": {
+        "value": 0.002207544167225005,
+        "ci95_iid": [
+          0.0016690788452263245,
+          0.0027460094892236856
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 20989,
+      "clicks": 135,
+      "ess": 17697.709198088538,
+      "ess_fraction": 0.8431897278616675,
+      "weight_max": 2.0,
+      "weight_mean": 0.5365905950736108,
+      "estimates": {
+        "DM": {
+          "value": 0.008200797817052897,
+          "ci95_iid": [
+            0.008177946502274632,
+            0.008223649131831162
+          ]
+        },
+        "IPS": {
+          "value": 0.0033589022821477973,
+          "ci95_iid": [
+            0.002760853674071939,
+            0.003956950890223656
+          ]
+        },
+        "SNIPS": {
+          "value": 0.006259711431742509,
+          "ci95_iid": [
+            0.0051451606126281975,
+            0.007374262250856821
+          ]
+        },
+        "DR": {
+          "value": 0.008467415910378136,
+          "ci95_iid": [
+            0.00786812510892965,
+            0.009066706711826623
+          ]
+        }
+      },
+      "scope": "2019-11-30",
+      "cap": 2,
+      "paired": {
+        "value": 0.00203580600282324,
+        "ci95_iid": [
+          0.001481312824622892,
+          0.0025902991810235884
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 20989,
+      "clicks": 135,
+      "ess": 9141.096990666481,
+      "ess_fraction": 0.43551846160686464,
+      "weight_max": 5.0,
+      "weight_mean": 0.6097717852208309,
+      "estimates": {
+        "DM": {
+          "value": 0.008200797817052897,
+          "ci95_iid": [
+            0.008177946502274632,
+            0.008223649131831162
+          ]
+        },
+        "IPS": {
+          "value": 0.003644766306160375,
+          "ci95_iid": [
+            0.002794141015364995,
+            0.004495391596955755
+          ]
+        },
+        "SNIPS": {
+          "value": 0.005977262960503184,
+          "ci95_iid": [
+            0.004582913896708188,
+            0.007371612024298179
+          ]
+        },
+        "DR": {
+          "value": 0.007952201417172842,
+          "ci95_iid": [
+            0.007097976564510718,
+            0.008806426269834966
+          ]
+        }
+      },
+      "scope": "2019-11-30",
+      "cap": 5,
+      "paired": {
+        "value": 0.0015205915096179468,
+        "ci95_iid": [
+          0.0007644189127119234,
+          0.00227676410652397
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 20989,
+      "clicks": 135,
+      "ess": 4188.328542194728,
+      "ess_fraction": 0.1995487418264199,
+      "weight_max": 10.0,
+      "weight_mean": 0.7317404354661973,
+      "estimates": {
+        "DM": {
+          "value": 0.008200797817052897,
+          "ci95_iid": [
+            0.008177946502274632,
+            0.008223649131831162
+          ]
+        },
+        "IPS": {
+          "value": 0.0041212063461813385,
+          "ci95_iid": [
+            0.0026960800022286413,
+            0.005546332690134036
+          ]
+        },
+        "SNIPS": {
+          "value": 0.005632060422567308,
+          "ci95_iid": [
+            0.0036865024493879647,
+            0.007577618395746651
+          ]
+        },
+        "DR": {
+          "value": 0.007093510595164018,
+          "ci95_iid": [
+            0.005660604092761469,
+            0.008526417097566566
+          ]
+        }
+      },
+      "scope": "2019-11-30",
+      "cap": 10,
+      "paired": {
+        "value": 0.0006619006876091234,
+        "ci95_iid": [
+          -0.0006489352051555565,
+          0.0019727365803738034
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Paired DR lower bound does not exceed zero",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    },
+    {
+      "n": 20989,
+      "clicks": 135,
+      "ess": 2276.3346683609266,
+      "ess_fraction": 0.10845369804949863,
+      "weight_max": 17.50000000000003,
+      "weight_mean": 0.9146934108342479,
+      "estimates": {
+        "DM": {
+          "value": 0.008200797817052897,
+          "ci95_iid": [
+            0.008177946502274632,
+            0.008223649131831162
+          ]
+        },
+        "IPS": {
+          "value": 0.004835866406212786,
+          "ci95_iid": [
+            0.0024637185295938845,
+            0.007208014282831687
+          ]
+        },
+        "SNIPS": {
+          "value": 0.0052868713701591285,
+          "ci95_iid": [
+            0.0026971336438686333,
+            0.007876609096449624
+          ]
+        },
+        "DR": {
+          "value": 0.005805474362150779,
+          "ci95_iid": [
+            0.003419464876653441,
+            0.008191483847648116
+          ]
+        }
+      },
+      "scope": "2019-11-30",
+      "cap": 34,
+      "paired": {
+        "value": -0.0006261355454041168,
+        "ci95_iid": [
+          -0.0028828079078896383,
+          0.0016305368170814048
+        ]
+      },
+      "review": {
+        "status": "HOLD",
+        "reasons": [
+          "Reference validation discrepancy",
+          "Fewer than 14 evaluation days; limited temporal evidence",
+          "Paired DR lower bound does not exceed zero",
+          "Estimator disagreement exceeds 0.2 percentage points"
+        ],
+        "operational_authorization": false
+      }
+    }
+  ],
+  "examples": [
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 329663,
+      "timestamp": "2019-11-29 00:37:32.029288+00:00",
+      "item_id": 4,
+      "position": 1,
+      "click": 1,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0059435173874251,
+      "dm": 0.0083398345740045,
+      "dr": 0.5053680758802929,
+      "baseline_dr": 0.99868472552506,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 330754,
+      "timestamp": "2019-11-29 01:06:00.008415+00:00",
+      "item_id": 32,
+      "position": 1,
+      "click": 1,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0017149171005303,
+      "dm": 0.0128394553527739,
+      "dr": 0.5119819968025097,
+      "baseline_dr": 1.001195051214249,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 331625,
+      "timestamp": "2019-11-29 01:25:29.995822+00:00",
+      "item_id": 16,
+      "position": 1,
+      "click": 1,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0162847524515887,
+      "dm": 0.0065096097521048,
+      "dr": 0.4983672335263113,
+      "baseline_dr": 0.9913455736621004,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 333376,
+      "timestamp": "2019-11-29 02:06:48.941946+00:00",
+      "item_id": 26,
+      "position": 1,
+      "click": 1,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0069404818495178,
+      "dm": 0.0083398345740045,
+      "dr": 0.5048695936492466,
+      "baseline_dr": 0.9976877610629672,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 334014,
+      "timestamp": "2019-11-29 02:22:11.057889+00:00",
+      "item_id": 21,
+      "position": 1,
+      "click": 1,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0102672951347752,
+      "dm": 0.0065096097521048,
+      "dr": 0.501375962184718,
+      "baseline_dr": 0.997363030978914,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 334051,
+      "timestamp": "2019-11-29 02:22:49.516237+00:00",
+      "item_id": 30,
+      "position": 1,
+      "click": 1,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0015235149220096,
+      "dm": 0.0065096097521048,
+      "dr": 0.5057478522911009,
+      "baseline_dr": 1.0061068111916798,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 339924,
+      "timestamp": "2019-11-29 03:41:40.964529+00:00",
+      "item_id": 8,
+      "position": 1,
+      "click": 1,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0036008537198412,
+      "dm": 0.0083398345740045,
+      "dr": 0.5065394077140849,
+      "baseline_dr": 1.0010273891926438,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 340014,
+      "timestamp": "2019-11-29 03:43:01.524626+00:00",
+      "item_id": 31,
+      "position": 1,
+      "click": 1,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0018603869978116,
+      "dm": 0.0083398345740045,
+      "dr": 0.5074096410750997,
+      "baseline_dr": 1.002767855914673,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 328311,
+      "timestamp": "2019-11-29 00:00:00.637530+00:00",
+      "item_id": 9,
+      "position": 1,
+      "click": 0,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0036902083716948,
+      "dm": 0.0065096097521048,
+      "dr": 0.0046645055662574,
+      "baseline_dr": 0.0039401177419927,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 328314,
+      "timestamp": "2019-11-29 00:00:01.897034+00:00",
+      "item_id": 29,
+      "position": 1,
+      "click": 0,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0029646004294274,
+      "dm": 0.0065096097521048,
+      "dr": 0.005027309537391,
+      "baseline_dr": 0.00466572568426,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 328317,
+      "timestamp": "2019-11-29 00:00:02.704139+00:00",
+      "item_id": 29,
+      "position": 1,
+      "click": 0,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0061512473058678,
+      "dm": 0.0083398345740045,
+      "dr": 0.0052642109210706,
+      "baseline_dr": -0.0015230043933846,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 328322,
+      "timestamp": "2019-11-29 00:00:08.573944+00:00",
+      "item_id": 29,
+      "position": 1,
+      "click": 0,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0029646004294274,
+      "dm": 0.0065096097521048,
+      "dr": 0.005027309537391,
+      "baseline_dr": 0.00466572568426,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 328324,
+      "timestamp": "2019-11-29 00:00:13.407559+00:00",
+      "item_id": 1,
+      "position": 1,
+      "click": 0,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0048046333037207,
+      "dm": 0.0083398345740045,
+      "dr": 0.0059375179221442,
+      "baseline_dr": -0.0001763903912374,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 328326,
+      "timestamp": "2019-11-29 00:00:29.549564+00:00",
+      "item_id": 9,
+      "position": 1,
+      "click": 0,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.003151724269147,
+      "dm": 0.0083398345740045,
+      "dr": 0.006763972439431,
+      "baseline_dr": 0.0014765186433362,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 328330,
+      "timestamp": "2019-11-29 00:00:34.127169+00:00",
+      "item_id": 16,
+      "position": 1,
+      "click": 0,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0021161724333317,
+      "dm": 0.0128394553527739,
+      "dr": 0.011781369136108,
+      "baseline_dr": 0.0007937958814453,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    },
+    {
+      "source_sha": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "source_row": 328332,
+      "timestamp": "2019-11-29 00:00:38.482350+00:00",
+      "item_id": 1,
+      "position": 1,
+      "click": 0,
+      "propensity_score": 0.0294117647058823,
+      "day": "2019-11-29",
+      "target_probability": 0.0147058823529411,
+      "weight": 0.5000000000000009,
+      "q_logged": 0.0013108184500804,
+      "dm": 0.0128394553527739,
+      "dr": 0.0121840461277337,
+      "baseline_dr": 0.0015991498646967,
+      "model_cutoff": "2019-11-27 23:59:51.060784+00:00"
+    }
+  ],
+  "reference_review": {
+    "status": "MISMATCH",
+    "position1_total_variation_prior_vs_logged_frequency": 0.31208086577308625,
+    "ips_minus_observed_bts": -0.001469736719726519,
+    "combined_iid_standard_errors": -3.6481972264184965,
+    "interpretation": "The pinned production-prior simulator does not reproduce observed position-one action frequencies. Algorithm parity and dataset counts pass, but the comparison cannot certify new-policy value. No single cause is established; prior/release alignment, policy dynamics and population/temporal differences require investigation. Do not treat observed BTS CTR as exact truth for an unmatched fixed-prior policy.",
+    "publisher_table1_counts_match": true
+  },
+  "source_manifest": {
+    "dataset": "ZOZO Open Bandit Dataset",
+    "campaign": "men",
+    "license": "CC BY 4.0",
+    "files": [
+      {
+        "source_sha256": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+        "bytes": 151946449,
+        "rows": 452949,
+        "policy": "random",
+        "file": "men.csv"
+      },
+      {
+        "source_sha256": "f116bb11bd0b18f02ca69d313c790c63c006728b3fae28a562d7309e20a0e4b5",
+        "bytes": 1332891122,
+        "rows": 4077727,
+        "policy": "bts",
+        "file": "men.csv"
+      }
+    ],
+    "revisions": {
+      "huggingface": "90a1283aecd19026caf15a0840af1176a41f6a76",
+      "obp": "8cbd5fa4558b7ad2ba4781546d6604e4cc3e07c4"
+    }
+  },
+  "protocol_sha256": "a24254ae130fcb22fde851074dba6c070d3547aa95e7aa5bca5134ecbbdfa99c",
+  "scope": "Historical position-one Men campaign, 2019; conditional inference, no slate claim"
+}

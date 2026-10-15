@@ -1,0 +1,16 @@
+{
+  "actual_test_population": true,
+  "unique_source_row_identity": true,
+  "raw_hashes": true,
+  "frozen_protocol": true,
+  "frozen_selection": true,
+  "strict_training_cutoff": true,
+  "independent_ips": true,
+  "independent_dr": true,
+  "independent_snips": true,
+  "paired_dr": true,
+  "independent_ess": true,
+  "gate_not_overridden": true,
+  "seven_real_days": true,
+  "exploration_floor": true
+}

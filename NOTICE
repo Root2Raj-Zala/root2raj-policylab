@@ -1,0 +1,3 @@
+PolicyLab original implementation: Copyright 2026 Ruturajsinh Zala (Root2Raj), AI-assisted.
+Production Beta priors and reference algorithm originate in Open Bandit Pipeline, copyright Yuta Saito, Yusuke Narita, and ZOZO Technologies, Inc.; Apache License 2.0. Copy of upstream license: data/upstream/LICENSE.
+Open Bandit Dataset: Yuta Saito, Shunsuke Aihara, Megumi Matsutani, Yusuke Narita. CC BY 4.0, https://creativecommons.org/licenses/by/4.0/. Derived audit and aggregates retain attribution, identify transformations and imply no endorsement.

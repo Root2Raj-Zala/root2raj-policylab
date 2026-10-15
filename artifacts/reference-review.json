@@ -1,0 +1,8 @@
+{
+  "status": "MISMATCH",
+  "position1_total_variation_prior_vs_logged_frequency": 0.31208086577308625,
+  "ips_minus_observed_bts": -0.001469736719726519,
+  "combined_iid_standard_errors": -3.6481972264184965,
+  "interpretation": "The pinned production-prior simulator does not reproduce observed position-one action frequencies. Algorithm parity and dataset counts pass, but the comparison cannot certify new-policy value. No single cause is established; prior/release alignment, policy dynamics and population/temporal differences require investigation. Do not treat observed BTS CTR as exact truth for an unmatched fixed-prior policy.",
+  "publisher_table1_counts_match": true
+}

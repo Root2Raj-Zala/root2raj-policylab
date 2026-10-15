@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "real_rows": 4530676,
+  "shards": 46,
+  "replayed_source_files": 2,
+  "unchanged_rows_clicks_and_identities": true,
+  "all_parquet_hashes_verified": true,
+  "seconds": 38.138162600000214,
+  "fault_injection": "separate six-row fixture, not synthetic production events"
+}

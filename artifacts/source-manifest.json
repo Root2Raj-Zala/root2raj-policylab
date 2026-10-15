@@ -1,0 +1,25 @@
+{
+  "dataset": "ZOZO Open Bandit Dataset",
+  "campaign": "men",
+  "license": "CC BY 4.0",
+  "files": [
+    {
+      "source_sha256": "c4b6f65e62bf2c683914703ab6b875cc3e1b4ef0403a5779f548f5578cc34d6d",
+      "bytes": 151946449,
+      "rows": 452949,
+      "policy": "random",
+      "file": "men.csv"
+    },
+    {
+      "source_sha256": "f116bb11bd0b18f02ca69d313c790c63c006728b3fae28a562d7309e20a0e4b5",
+      "bytes": 1332891122,
+      "rows": 4077727,
+      "policy": "bts",
+      "file": "men.csv"
+    }
+  ],
+  "revisions": {
+    "huggingface": "90a1283aecd19026caf15a0840af1176a41f6a76",
+    "obp": "8cbd5fa4558b7ad2ba4781546d6604e4cc3e07c4"
+  }
+}

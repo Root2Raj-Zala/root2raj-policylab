@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "registered_before_analysis": "2026-10-15",
+  "dataset": "ZOZO Open Bandit Men, both policies, all original rows",
+  "target": "Expected binary click at position 1 under position-local consistency, no slate interaction; historical context population only",
+  "reference": "Official OBP production-prior BernoulliTS, 1000000 Monte Carlo draws seed 12345, top-3 ranks; Random to BTS position 1 estimates vs BTS observed click mean; full-period and daily diagnostics. Modern reimplementation of reference protocol, not exact paper table replication.",
+  "chronology": {"train_days":4,"validation_days":1,"test_days":2},
+  "reward_model": "Empirical-Bayes action x user_feature_0 click rates, strength 100, action prior strength 100; global prior training clicks only; no affinity, timestamps, source row or other policy outcome as predictor",
+  "candidates": ["contextual_epsilon_0.2","contextual_epsilon_0.5","action_epsilon_0.2","action_epsilon_0.5"],
+  "selection": "Largest validation paired DR normal lower bound vs uniform; deterministic name tie break; freeze selected policy before test",
+  "nuisance": "3-fold row-level cross-fit reference descriptive benchmark; chronology model frozen at end train for validation/test, no final-outcome fitting",
+  "estimators": ["DM","IPS","SNIPS","DR"],
+  "clips": [1,2,5,10,34],
+  "diagnostics": ["ESS","maximum weight","weight mean","top 1 percent weight share","daily estimates","paired candidate-minus-uniform uncertainty","hour-block bootstrap sensitivity"],
+  "gate": {"minimum_ess_fraction":0.1,"minimum_test_clicks":100,"minimum_days_for_release":14,"paired_dr_lower_bound_gt":0,"max_estimator_gap_absolute":0.002},
+  "uncertainty": "Row-iid normal intervals and paired differences explicitly conditional approximations; 1000 hour-cluster bootstrap replicates sensitivity only; seven-day source cannot satisfy release horizon",
+  "zero_spend": true,
+  "independent_outcomes": "Unobserved item rewards never manufactured for real-data claims. Simulation oracle results separately labeled."
+}

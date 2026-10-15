@@ -1,0 +1,81 @@
+{
+  "_id": "6a2f3b3ad98731290f56d652",
+  "id": "zozonext/open-bandit",
+  "author": "zozonext",
+  "sha": "90a1283aecd19026caf15a0840af1176a41f6a76",
+  "lastModified": "2026-06-15T01:53:22.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "license:cc-by-4.0",
+    "size_categories:10M<n<100M",
+    "format:csv",
+    "modality:tabular",
+    "modality:text",
+    "library:datasets",
+    "library:dask",
+    "library:polars",
+    "library:mlcroissant",
+    "arxiv:2008.07146",
+    "region:us"
+  ],
+  "description": "\nThis is the full size version of Open Bandit Dataset that can be used for research on bandit algorithms and off-policy evaluation.\nThe small size example version of our data is available at https://github.com/st-tech/zr-obp/tree/master/obd\n\n\t\n\t\t\n\t\n\t\n\t\tDataset Description\n\t\n\nOpen Bandit Dataset is constructed in an A/B test of two multi-armed bandit policies in a large-scale fashion e-commerce platform, ZOZOTOWN (https://zozo.jp/).\nIt currently consists of a total of 26M rows, each one\u2026 See the full description on the dataset page: https://huggingface.co/datasets/zozonext/open-bandit.",
+  "downloads": 5861,
+  "likes": 1,
+  "cardData": {
+    "license": "cc-by-4.0"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "VERSION"
+    },
+    {
+      "rfilename": "assets/logo.png"
+    },
+    {
+      "rfilename": "bts/all/all.csv"
+    },
+    {
+      "rfilename": "bts/all/item_context.csv"
+    },
+    {
+      "rfilename": "bts/men/item_context.csv"
+    },
+    {
+      "rfilename": "bts/men/men.csv"
+    },
+    {
+      "rfilename": "bts/women/item_context.csv"
+    },
+    {
+      "rfilename": "bts/women/women.csv"
+    },
+    {
+      "rfilename": "random/all/all.csv"
+    },
+    {
+      "rfilename": "random/all/item_context.csv"
+    },
+    {
+      "rfilename": "random/men/item_context.csv"
+    },
+    {
+      "rfilename": "random/men/men.csv"
+    },
+    {
+      "rfilename": "random/women/item_context.csv"
+    },
+    {
+      "rfilename": "random/women/women.csv"
+    }
+  ],
+  "createdAt": "2026-06-14T23:37:30.000Z",
+  "usedStorage": 11988581778
+}

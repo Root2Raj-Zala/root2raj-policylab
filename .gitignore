@@ -1,0 +1,11 @@
+data/raw/
+data/warehouse/
+__pycache__/
+.cache/
+.venv/
+*.part
+*.pending
+artifacts/test-audit.csv.gz
+scripts/repair.py
+scripts/author*.py
+.tools/
