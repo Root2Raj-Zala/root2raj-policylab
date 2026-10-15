@@ -1,6 +1,6 @@
-# Model and decision card — PolicyLab 1.0
+# Model and decision card â€” PolicyLab 1.0
 
-Owner: Ruturajsinh Zala (Root2Raj). AI-assisted personal research. Real historical ZOZOTOWN experiment logs, 24–30 November 2019. Data CC BY 4.0, original code MIT, upstream priors/reference Apache 2.0.
+Owner: Ruturajsinh Zala (Root2Raj). AI-assisted personal research. Real historical ZOZOTOWN experiment logs, 24â€“30 November 2019. Data CC BY 4.0, original code MIT, upstream priors/reference Apache 2.0.
 
 **Decision: HOLD.** This is a completed research and engineering release, with an intentionally withheld policy recommendation. It is not a production recommender.
 
@@ -17,7 +17,7 @@ Owner: Ruturajsinh Zala (Root2Raj). AI-assisted personal research. Real historic
 | DR | 0.7892% |
 | SNIPS | 0.7678% |
 
-Paired DR difference vs uniform: 0.2512 percentage points; conditional row-iid 95% approximation [-0.0085, 0.5109]. This interval crosses zero. Hour-block sensitivity also crosses zero. Many impressions do not supply many independent days.
+Paired DR difference vs uniform: 0.2512 percentage points; conditional row-iid 95% approximation [-0.0085, 0.5109]. This interval crosses zero. The UTC-hour bootstrap sensitivity interval is [+0.0027, +0.5599] percentage points and does not cross zero. It resamples only 48 hours across two final days; it is not a guaranteed-valid confidence interval or evidence that repairs the failed reference alignment, short horizon or row-iid gate. Many impressions do not supply many independent days.
 
 ## Reference discrepancy
 

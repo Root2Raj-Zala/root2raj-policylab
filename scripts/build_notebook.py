@@ -49,6 +49,7 @@ package_hash = hashlib.sha256(b).hexdigest()
 dest = r.parents[1] / "publish-kit/policylab-release"
 dest.mkdir(exist_ok=True, parents=True)
 (dest / "source-audit.zip").write_bytes(b)
+DOCUMENTATION_ERRATUM = "\n\n**Documentation erratum:** the historical hashed archive's model card incorrectly says the hour-block sensitivity crosses zero. The frozen numeric interval is **[+0.0027, +0.5599] percentage points**, above zero; the conditional row-iid interval crosses zero. The short, 48-hour sensitivity does not repair reference mismatch or the seven-day horizon. No estimates or HOLD decision changed. [Correction and provenance](https://github.com/Root2Raj-Zala/root2raj-policylab/blob/main/docs/ERRATA.md)."
 cells = []
 
 
@@ -69,11 +70,11 @@ def code(x):
 
 
 md("""# PolicyLab: Can logged clicks justify a recommendation-policy change?
-**Ruturajsinh Zala Â· Root2Raj** | AI-assisted personal Data Science + Data Architecture research
+**Ruturajsinh Zala Ã‚Â· Root2Raj** | AI-assisted personal Data Science + Data Architecture research
 
-4,530,676 real ZOZOTOWN impressions, two historical experiment policies, 34 Men-campaign actions, seven days (24â€“30 November 2019). This reproducible evidence audit deliberately concludes **HOLD**. It exposes a reference-policy mismatch and an inconclusive final improvement, rather than manufacturing a positive result.
+4,530,676 real ZOZOTOWN impressions, two historical experiment policies, 34 Men-campaign actions, seven days (24Ã¢â‚¬â€œ30 November 2019). This reproducible evidence audit deliberately concludes **HOLD**. It exposes a reference-policy mismatch and an inconclusive final improvement, rather than manufacturing a positive result.
 
-[Interactive lab](https://root2raj.ruturaj1zala123.chatgpt.site/projects/policylab/) Â· [GitHub](https://github.com/Root2Raj-Zala/root2raj-policylab) Â· [Official data](https://research.zozo.com/data.html) Â· [Paper](https://arxiv.org/abs/2008.07146)
+[Interactive lab](https://root2raj.ruturaj1zala123.chatgpt.site/projects/policylab/) Ã‚Â· [GitHub](https://github.com/Root2Raj-Zala/root2raj-policylab) Ã‚Â· [Official data](https://research.zozo.com/data.html) Ã‚Â· [Paper](https://arxiv.org/abs/2008.07146)
 
 Data/derived audit: CC BY 4.0, Saito, Aihara, Matsutani & Narita. Original code MIT; upstream production priors Apache 2.0. Changes: position filtering, fitting, weighting and aggregation. No endorsement, client outcome or operational deployment is claimed.
 
@@ -160,6 +161,7 @@ nb = {
     },
     "cells": cells,
 }
+cells[0]["source"] += DOCUMENTATION_ERRATUM
 for i, c in enumerate(cells):
     c["id"] = f"policylab-{i:02}"
     c["source"] = c["source"].splitlines(keepends=True)
