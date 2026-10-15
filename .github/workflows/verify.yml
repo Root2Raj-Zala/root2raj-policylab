@@ -1,0 +1,29 @@
+name: PolicyLab verification
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  scientific-and-recovery-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONPYCACHEPREFIX: ${{ github.workspace }}/.cache/pycache
+      MPLCONFIGDIR: ${{ github.workspace }}/.cache/matplotlib
+      PIP_CACHE_DIR: ${{ github.workspace }}/.cache/pip
+      OMP_NUM_THREADS: '2'
+      OPENBLAS_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install CPU research dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install -e . --no-deps
+      - name: Scientific identities, source contracts and interrupted-commit recovery
+        run: python -m unittest discover -s tests -v
+      - name: Independently reconcile real held-out estimates
+        run: python -m policylab.verify
+      - name: Execute complete self-contained audit notebook
+        run: python scripts/execute_notebook.py
