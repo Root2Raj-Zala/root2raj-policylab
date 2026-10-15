@@ -69,11 +69,11 @@ def code(x):
 
 
 md("""# PolicyLab: Can logged clicks justify a recommendation-policy change?
-**Ruturajsinh Zala · Root2Raj** | AI-assisted personal Data Science + Data Architecture research
+**Ruturajsinh Zala Â· Root2Raj** | AI-assisted personal Data Science + Data Architecture research
 
-4,530,676 real ZOZOTOWN impressions, two historical experiment policies, 34 Men-campaign actions, seven days (24–30 November 2019). This reproducible evidence audit deliberately concludes **HOLD**. It exposes a reference-policy mismatch and an inconclusive final improvement, rather than manufacturing a positive result.
+4,530,676 real ZOZOTOWN impressions, two historical experiment policies, 34 Men-campaign actions, seven days (24â€“30 November 2019). This reproducible evidence audit deliberately concludes **HOLD**. It exposes a reference-policy mismatch and an inconclusive final improvement, rather than manufacturing a positive result.
 
-[Interactive lab](https://root2raj.ruturaj1zala123.chatgpt.site/projects/policylab/) · [GitHub](https://github.com/Root2Raj-Zala/root2raj-policylab) · [Official data](https://research.zozo.com/data.html) · [Paper](https://arxiv.org/abs/2008.07146)
+[Interactive lab](https://root2raj.ruturaj1zala123.chatgpt.site/projects/policylab/) Â· [GitHub](https://github.com/Root2Raj-Zala/root2raj-policylab) Â· [Official data](https://research.zozo.com/data.html) Â· [Paper](https://arxiv.org/abs/2008.07146)
 
 Data/derived audit: CC BY 4.0, Saito, Aihara, Matsutani & Narita. Original code MIT; upstream production priors Apache 2.0. Changes: position filtering, fitting, weighting and aggregation. No endorsement, client outcome or operational deployment is claimed.
 
@@ -82,8 +82,10 @@ code("""from pathlib import Path
 import os,sys,json,hashlib,base64,io,zipfile,subprocess,importlib.util
 ROOT=Path('/kaggle/working/policylab-audit') if Path('/kaggle').exists() else Path.cwd()/'.cache/policylab-notebook-audit'
 ROOT.mkdir(parents=True,exist_ok=True)
+CACHE_ROOT=Path('/kaggle/temp/policylab-cache') if Path('/kaggle').exists() else ROOT/'.cache'
 for key,sub in [('TEMP','tmp'),('TMP','tmp'),('PYTHONPYCACHEPREFIX','pycache'),('MPLCONFIGDIR','matplotlib'),('PIP_CACHE_DIR','pip')]:
-    p=ROOT/'.cache'/sub;p.mkdir(parents=True,exist_ok=True);os.environ[key]=str(p)
+    p=CACHE_ROOT/sub;p.mkdir(parents=True,exist_ok=True);os.environ[key]=str(p)
+sys.pycache_prefix=os.environ['PYTHONPYCACHEPREFIX']
 os.environ['OMP_NUM_THREADS']='2';os.environ['OPENBLAS_NUM_THREADS']='2'
 print('CPU-only, no paid API. Working directory:',ROOT)
 """)
@@ -95,7 +97,7 @@ code(
     + repr(package_hash)
     + "\nPACKAGE_B64="
     + repr(base64.b64encode(b).decode())
-    + "\npayload=base64.b64decode(PACKAGE_B64)\nassert hashlib.sha256(payload).hexdigest()==PACKAGE_SHA256\nwith zipfile.ZipFile(io.BytesIO(payload)) as z:\n    assert all(not Path(p).is_absolute() and '..' not in Path(p).parts for p in z.namelist())\n    z.extractall(ROOT)\nsys.path.insert(0,str(ROOT/'src'))\nif importlib.util.find_spec('duckdb') is None:\n    subprocess.check_call([sys.executable,'-m','pip','install','duckdb==1.5.6','--target',str(ROOT/'.deps'),'--disable-pip-version-check'])\n    sys.path.insert(0,str(ROOT/'.deps'))\nprint('Verified archive:',PACKAGE_SHA256)\n"
+    + "\npayload=base64.b64decode(PACKAGE_B64)\nassert hashlib.sha256(payload).hexdigest()==PACKAGE_SHA256\nwith zipfile.ZipFile(io.BytesIO(payload)) as z:\n    assert all(not Path(p).is_absolute() and '..' not in Path(p).parts for p in z.namelist())\n    z.extractall(ROOT)\nsys.path.insert(0,str(ROOT/'src'))\nimport importlib.metadata\ntry:\n    installed_duckdb=importlib.metadata.version('duckdb')\nexcept importlib.metadata.PackageNotFoundError:\n    installed_duckdb=None\nif installed_duckdb != '1.5.6':\n    DEPS=Path('/kaggle/temp/policylab-deps') if Path('/kaggle').exists() else ROOT/'.deps'\n    subprocess.check_call([sys.executable,'-m','pip','install','duckdb==1.5.6','--target',str(DEPS),'--upgrade','--disable-pip-version-check'])\n    sys.path.insert(0,str(DEPS))\nimport duckdb\nassert duckdb.__version__=='1.5.6',duckdb.__version__\nprint('Pinned DuckDB:',duckdb.__version__)\nprint('Verified archive:',PACKAGE_SHA256)\n"
 )
 md(
     "## 2. Execute meaningful scientific and recovery tests\nTests use separate fixtures with known answers. They cover DR misspecification identities, normalization and positivity failures, independent paired uncertainty, future outcomes, official-loop Monte Carlo parity, legitimate duplicate preservation and an injected pre-commit interruption. Fixtures never inflate the real-data count."
@@ -160,5 +162,6 @@ nb = {
 }
 for i, c in enumerate(cells):
     c["id"] = f"policylab-{i:02}"
+    c["source"] = c["source"].splitlines(keepends=True)
 (r / "notebooks/policylab.ipynb").write_text(json.dumps(nb, indent=1), encoding="utf-8")
 print("notebook", len(cells), "cells", len(b), "package bytes", package_hash)
