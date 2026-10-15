@@ -23,7 +23,11 @@ jobs:
           python -m pip install -e . --no-deps
       - name: Scientific identities, source contracts and interrupted-commit recovery
         run: python -m unittest discover -s tests -v
+      - name: Verify exact published evidence bytes
+        run: |
+          python -c "import json,hashlib,pathlib; p=pathlib.Path('artifacts'); d=json.loads((p/'integrity.json').read_text()); assert all(hashlib.sha256((p/n).read_bytes()).hexdigest()==h for n,h in d['files'].items()); print(len(d['files']), 'artifact hashes verified')"
       - name: Independently reconcile real held-out estimates
-        run: python -m policylab.verify
+        run: python -c "from policylab.verify import verify; print(verify('.'))"
       - name: Execute complete self-contained audit notebook
         run: python scripts/execute_notebook.py
+
